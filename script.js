@@ -50,7 +50,7 @@ function convertCountryCode(country) {
 }
 
 function getWeather(query = "Orlando", units = "metric") {
-  const API_KEY = "64f60853740a1ee3ba20d0fb595c97d5";
+  const API_KEY = "YOUR_API_KEY";
 
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=${units}`

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather__header">
+            <form class="weather__search">
+                <input type="text" placeholder="Search for City" class="weather__searchform">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="weather__units">
+                <span class="weather_unit_celsius">&#176C</span>
+                <span class="weather_unit_separator">|</span>
+                <span class="weather_unit_farenheit">&#176F</span>
+            </div>
+        </div>
+        <div class="weather__body">
+            <div class="weather__main">
+                <h1 class="weather__city"></h1>
+                <div class="weather__temp__card">
+                    <div class="weather__temp-time">
+                        <p class="weather__month"> MARCH</p>
+                        <p class="weather__date"> 29th</p>
+                    </div>
+                    <div class="weather__temp-forecast">
+                        <div class="weather__icon"></div>
+                        <p class="weather__temperature"></p>
+                        <p class="weather__forecast"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="weather__info">
+            <div class="weather__card">
+                <div class="weather__minmax">
+                    <div>
+                        <span>Min : </span>
+                        <span class="weather__temp__min"></span>
+                    </div>
+                    <div>
+                        <span>Max : </span>
+                        <span class="weather__temp__max"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <span>Real Feel : </span>
+                    <span class="weather__realfeel__val"></span>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <span>Humidity : </span>
+                    <span class="weather__humidity__val"></span>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <span>Wind : </span>
+                    <span class="weather__wind__val"></span>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div class="weather__pressure">
+                    <span>Pressure : </span>
+                    <span class="weather__pressure__val"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
